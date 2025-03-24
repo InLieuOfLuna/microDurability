@@ -1,9 +1,10 @@
 package com.github.reviversmc.microdurability;
 
-import com.github.reviversmc.microdurability.compat.mods.RaisedCompat;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.math.ColorHelper;
+
+import com.github.reviversmc.microdurability.compat.mods.RaisedCompat;
 
 public class Renderer1214 extends Renderer121 {
 	@Override
