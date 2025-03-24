@@ -155,6 +155,7 @@ dependencies {
 	include project(path: ':microdurability-1.20')
 	include project(path: ':microdurability-1.20.5')
 	include project(path: ':microdurability-1.21')
+	include project(path: ':microdurability-1.21.4')
 
 	runtimeOnly project(path: ':microdurability-core', configuration: "namedElements")
 	runtimeOnly project(path: ':microdurability-1.16', configuration: "namedElements")
@@ -164,15 +165,16 @@ dependencies {
 	runtimeOnly project(path: ':microdurability-1.20', configuration: "namedElements")
 	runtimeOnly project(path: ':microdurability-1.20.5', configuration: "namedElements")
 	runtimeOnly project(path: ':microdurability-1.21', configuration: "namedElements")
+	runtimeOnly project(path: ':microdurability-1.21.4', configuration: "namedElements")
 
-	modRuntimeOnly "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version_1_21}"
-	modRuntimeOnly "com.terraformersmc:modmenu:${project.modmenu_version_1_21}"
-	modRuntimeOnly("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version_1_21}") {
+	modRuntimeOnly "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version_1_21_4}"
+	modRuntimeOnly "com.terraformersmc:modmenu:${project.modmenu_version_1_21_4}"
+	modRuntimeOnly("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version_1_21_4}") {
 		exclude(group: 'net.fabricmc.fabric-api')
 	}
 
-	minecraft "com.mojang:minecraft:${minecraft_version_1_21}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings_1_21}:v2"
+	minecraft "com.mojang:minecraft:${minecraft_version_1_21_4}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings_1_21_4}:v2"
 }
 
 
